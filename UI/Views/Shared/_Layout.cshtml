@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Meu Aplicativo ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top top-bg d-none d-lg-block">
+                    <div class="container-fluid">
+                        <div class="col-xl-12">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="header-info-left d-flex">
+                                    <ul class="contact-now">
+                                        <li>+777 2345 7886</li>
+                                    </ul>
+                                </div>
+                                <div class="header-info-right">
+                                    <ul>
+                                        <li class="btn-site-header-1">My Account</li>
+                                        <li class="btn-site-header-1">Wish List</li>
+                                        <li class="btn-site-header-1">Shopping</li>
+                                        <li class="btn-site-header-1">Cart</li>
+                                        <li class="btn-site-header-1">Checkout</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
+                                <div class="logo">
+                                    <a><img src="~/Images/logo/logo.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-8 col-md-7 col-sm-5">
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a>Home</a></li>
+                                            <li><a>Catagori</a></li>
+                                            <li class="hot">
+                                                <a>Latest</a>
+                                                <ul class="submenu">
+                                                    <li><a> Product list</a></li>
+                                                    <li><a> Product Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a>Blog</a>
+                                                <ul class="submenu">
+                                                    <li><a>Blog</a></li>
+                                                    <li><a>Blog Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a>Pages</a>
+                                                <ul class="submenu">
+                                                    <li><a>Login</a></li>
+                                                    <li><a>Card</a></li>
+                                                    <li><a>Element</a></li>
+                                                    <li><a>About</a></li>
+                                                    <li><a>Confirmation</a></li>
+                                                    <li><a>Shopping Cart</a></li>
+                                                    <li><a>Product Checkout</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a>Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card">
+                                <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
+                                    <li class="d-none d-xl-block">
+                                        <div class="form-box f-right special-div">
+                                            <input type="text" name="Search" placeholder="Search products">
+                                            <div class="search-icon">
+                                                <i class="fas fa-search special-tag"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class=" d-none d-xl-block">
+                                        <div class="favorit-items">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="shopping-card">
+                                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="d-none d-lg-block"> <a class="btn header-btn">Sign in</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <!-- Footer Start-->
+            <div class="footer-area footer-padding2">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <div class="single-footer-caption mb-30">
+                                    <!-- logo -->
+                                    <div class="footer-logo">
+                                        <a href="index.html"><img src="~/Images/logo/logo2_footer.png" alt=""></a>
+                                    </div>
+                                    <div class="footer-tittle">
+                                        <div class="footer-pera">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Quick Links</h4>
+                                    <ul>
+                                        <li><a>About</a></li>
+                                        <li><a> Offers & Discounts</a></li>
+                                        <li><a> Get Coupon</a></li>
+                                        <li><a>  Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>New Products</h4>
+                                    <ul>
+                                        <li><a>Woman Cloth</a></li>
+                                        <li><a>Fashion Accessories</a></li>
+                                        <li><a> Man Accessories</a></li>
+                                        <li><a> Rubber made Toys</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Support</h4>
+                                    <ul>
+                                        <li><a>Frequently Asked Questions</a></li>
+                                        <li><a>Terms & Conditions</a></li>
+                                        <li><a>Privacy Policy</a></li>
+                                        <li><a>Privacy Policy</a></li>
+                                        <li><a>Report a Payment Issue</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer bottom -->
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-7 col-md-7">
+                            <div class="footer-copy-right">
+                                <p>
+                                    <!-- Link back to DevLoops can't be removed. Template is licensed under CC BY 3.0. -->
+                                    Copyright &copy;
+                                    <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="http://dev-loops.com" target="_blank">DevLoops</a>
+                                    <!-- Link back to DevLoops can't be removed. Template is licensed under CC BY 3.0. -->
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-5">
+                            <div class="footer-copy-right f-right">
+                                <!-- social -->
+                                <div class="footer-social">
+                                    <a><i class="fab fa-twitter"></i></a>
+                                    <a><i class="fab fa-facebook-f"></i></a>
+                                    <a><i class="fab fa-behance"></i></a>
+                                    <a><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer End-->
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

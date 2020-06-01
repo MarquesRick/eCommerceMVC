@@ -1,0 +1,12 @@
+﻿.btn-site-header-1 {
+    cursor: pointer;
+    padding-left: 36px;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.special-div {
+    width: 100%;
+    height: 100%;
+}
