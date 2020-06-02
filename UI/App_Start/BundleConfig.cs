@@ -20,8 +20,32 @@ namespace UI
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                      "~/Scripts/Vendor/jquery-1.12.4.min.js",
+                      "~/Scripts/Vendor/modernizr-3.5.0.min.js",
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/respond.js",
+                      "~/Scripts/Js/animated.headline.js",
+                      "~/Scripts/Js/aos.js",
+                      "~/Scripts/Js/cells-by-column.js",
+                      "~/Scripts/Js/contact.js",
+                      "~/Scripts/Js/gmaps.min.js",
+                      "~/Scripts/Js/jquery.ajaxchimp.min.js",
+                      "~/Scripts/Js/jquery.counterup.min.js",
+                      "~/Scripts/Js/jquery.downCount.js",
+                      "~/Scripts/Js/jquery.easing.min.js",
+                      "~/Scripts/Js/jquery.form.js",
+                      "~/Scripts/Js/jquery.magnific-popup.js",
+                      "~/Scripts/Js/jquery.nice-select.min.js",
+                      "~/Scripts/Js/jquery.paroller.min.js",
+                      "~/Scripts/Js/jquery.scrollUp.min.js",
+                      "~/Scripts/Js/jquery.slicknav.min.js",
+                      "~/Scripts/Js/jquery.sticky.js",
+                      "~/Scripts/Js/jquery.validate.min.js",
+                      "~/Scripts/Js/lightslider.min.js",
+                      "~/Scripts/Js/mail-script.js",
+                      "~/Scripts/Js/main.js",
+                      "~/Scripts/Js/mixitup.min .js"
+                      ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
@@ -42,7 +66,7 @@ namespace UI
                       "~/Content/css/style.css",
                       "~/Content/css/swiper.css",
                       "~/Content/css/themify-icons.css",
-                      "~/Content/site.css"));
+                      "~/Content/Site.css"));
         }
     }
 }

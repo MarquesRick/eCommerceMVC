@@ -142,7 +142,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AuthenticateController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MyAccountController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -215,7 +217,46 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\animated.headline.js" />
+    <Content Include="Scripts\js\aos.js" />
+    <Content Include="Scripts\js\bootstrap.min.js" />
+    <Content Include="Scripts\js\cells-by-column.js" />
+    <Content Include="Scripts\js\contact.js" />
+    <Content Include="Scripts\js\gmaps.min.js" />
+    <Content Include="Scripts\js\jquery-1.12.1.min.js" />
+    <Content Include="Scripts\js\jquery.ajaxchimp.min.js" />
+    <Content Include="Scripts\js\jquery.counterup.min.js" />
+    <Content Include="Scripts\js\jquery.downCount.js" />
+    <Content Include="Scripts\js\jquery.easing.min.js" />
+    <Content Include="Scripts\js\jquery.form.js" />
+    <Content Include="Scripts\js\jquery.magnific-popup.js" />
+    <Content Include="Scripts\js\jquery.nice-select.min.js" />
+    <Content Include="Scripts\js\jquery.paroller.min.js" />
+    <Content Include="Scripts\js\jquery.scrollUp.min.js" />
+    <Content Include="Scripts\js\jquery.slicknav.min.js" />
+    <Content Include="Scripts\js\jquery.sticky.js" />
+    <Content Include="Scripts\js\jquery.validate.min.js" />
+    <Content Include="Scripts\js\lightslider.min.js" />
+    <Content Include="Scripts\js\mail-script.js" />
+    <Content Include="Scripts\js\main.js" />
+    <Content Include="Scripts\js\mixitup.min.js" />
+    <Content Include="Scripts\js\one-page-nav-min.js" />
+    <Content Include="Scripts\js\owl.carousel.min.js" />
+    <Content Include="Scripts\js\plugins.js" />
+    <Content Include="Scripts\js\popper.min.js" />
+    <Content Include="Scripts\js\price_rangs.js" />
+    <Content Include="Scripts\js\slick.min.js" />
+    <Content Include="Scripts\js\stellar.js" />
+    <Content Include="Scripts\js\swiper.jquery.js" />
+    <Content Include="Scripts\js\swiper.min.js" />
+    <Content Include="Scripts\js\swiper_custom.js" />
+    <Content Include="Scripts\js\theme.js" />
+    <Content Include="Scripts\js\vendor\jquery-1.12.4.min.js" />
+    <Content Include="Scripts\js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="Scripts\js\waypoints.min.js" />
+    <Content Include="Scripts\js\wow.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Pages\Login.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Web.config" />
@@ -232,6 +273,8 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Authenticate\Index.cshtml" />
+    <Content Include="Views\MyAccount\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -249,6 +292,12 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{E34C2D30-61AB-461D-B654-8010F12278C5}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
